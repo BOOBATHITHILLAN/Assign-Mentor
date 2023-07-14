@@ -1,42 +1,49 @@
-# Assign-Mentor
+# [🔗 GUVI Day 41 task] Node-JS Assign-Mentor
 
-A) For Local server (ie... Before render deployment)
+## Created task deployed on below link :
 
-1.To create Mentor (Post method)
-  http://localhost:3001/mentor
+<a href="https://assignmentor-backend-nodejsexpressjs.onrender.com/" target="_blank">https://assignmentor-backend-nodejsexpressjs.onrender.com/</a>
 
-2. To create Student (Post method)
-   http://localhost:3001/student
+## for getting all Mentors & Students details
 
-3. Assign Student to Mentor (Post method)
-   http://localhost:3001/assign/:mentorId/:studentId
+get method: </br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/
 
-4. Re-assign Student to Mentor (Post method)
-    http://localhost:3001/reassign/:mentorId/:studentId
+## for creating new Mentor
 
-5. Get all students for a particular mentor  (Get Method)
-   http://localhost:3001/mentor/:mentorId  
+post method: </br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/mentor </br>
+body: </br>
+{"name":"Sathish"}
 
-6. Get previously assigned mentor for a particular student  (Get Method)
-   http://localhost:3001/student/:studentId 
+## for creating new student
 
-B) After Render Deployment
-1.To create Mentor  (Post method)
-  https://assignmentor-backend-nodejsexpressjs.onrender.com/mentor
+post method: </br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/student </br>
+body: </br>
+{"name":"Boobathi"}
 
-2. To create Student (Post method)
-   https://assignmentor-backend-nodejsexpressjs.onrender.com/student
+## for assigning a student to mentor
 
-3. Assign Student to Mentor (Post method)
-   https://assignmentor-backend-nodejsexpressjs.onrender.com/assign/:mentorId/:studentId
+post method: </br>
+Format: URL/assign/:mentorId/:studentId </br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/assign/64b0c0125679577bd7c1a39c/64b0c0585679577bd7c1a3a0
 
-4. Re-assign Student to Mentor (Post method)
-   https://assignmentor-backend-nodejsexpressjs.onrender.com/reassign/:mentorId/:studentId
+## for reassigning mentor to student
 
-5. Get all students for a particular mentor (Get Method)
-   https://assignmentor-backend-nodejsexpressjs.onrender.com/mentor/:mentorId
-   Example  https://assignmentor-backend-nodejsexpressjs.onrender.com/mentor/64b0c03b5679577bd7c1a39e
+post method: </br>
+Format: URL/reassign/:mentorId/:studentId</br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/reassign/64b0c03b5679577bd7c1a39e/64b0c0585679577bd7c1a3a0
 
-6. Get previously assigned mentor for a particular student (Get Method)
-   https://assignmentor-backend-nodejsexpressjs.onrender.com/student/:studentId
-   Example  https://assignmentor-backend-nodejsexpressjs.onrender.com/student/64b0c0585679577bd7c1a3a0
+
+## for getting particular mentors student list
+
+get method: </br>
+Format: URL/mentor/mentorId</br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/mentor/64b0c03b5679577bd7c1a39e
+
+## for getting particular student previous mentor details 
+
+get method: </br>
+Format: URL/student/:studentId</br>
+https://assignmentor-backend-nodejsexpressjs.onrender.com/student/64b0c0585679577bd7c1a3a0
