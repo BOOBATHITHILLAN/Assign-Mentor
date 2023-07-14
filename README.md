@@ -39,4 +39,4 @@ B) After Render Deployment
 
 6. Get previously assigned mentor for a particular student (Get Method)
    https://assignmentor-backend-nodejsexpressjs.onrender.com/student/:studentId
-   Example  https://assignmentor-backend-nodejsexpressjs.onrender.com/student//64b0c0585679577bd7c1a3a0
+   Example  https://assignmentor-backend-nodejsexpressjs.onrender.com/student/64b0c0585679577bd7c1a3a0
