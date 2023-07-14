@@ -51,9 +51,14 @@ const Student = mongoose.model('Student', studentSchema);
 
 //Get mentor and student details
 app.get('/',(req,res)=>{
-    res.status(200).json({"Mentor":Mentor,"Student":Student})
-    console.log(Mentor);
-    console.log(Student);
+    Mentor.find({},{})
+     .then(mentor=>{
+         res.status(200).json({"Mentor":Mentor})
+     })
+    Student.find({},{})
+     .then(student=>{
+         res.status(200).json({"Student":Student})
+     })
 })
 
 
