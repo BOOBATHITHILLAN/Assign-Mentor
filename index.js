@@ -50,9 +50,14 @@ const Mentor = mongoose.model('Mentor', mentorSchema);
 const Student = mongoose.model('Student', studentSchema);
 
 
-//Get all student and mentors
-app.get('/', (request, response) => {
-    response.status(200).json([{ "Mentors": Mentor }, { "Students": Student }])
+//Get all mentors
+app.get('/mentorslist', (request, response) => {
+    response.status(200).json(Mentor);
+})
+
+//Get all students
+app.get('/studentslist', (request, response) => {
+    response.status(200).json(Student);
 })
 
 //Create a mentor
