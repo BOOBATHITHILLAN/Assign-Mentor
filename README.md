@@ -15,10 +15,10 @@ A) For Local server (ie... Before render deployment)
     http://localhost:3001/reassign/:mentorId/:studentId
 
 5. Get all students for a particular mentor  (Get Method)
-   http://localhost:3001/mentor/:mentorId  example=> http://localhost:3001/mentor/64b0c03b5679577bd7c1a39e
+   http://localhost:3001/mentor/:mentorId  
 
 6. Get previously assigned mentor for a particular student  (Get Method)
-   http://localhost:3001/student/:studentId example=> http://localhost:3001/student/64b0c0585679577bd7c1a3a0
+   http://localhost:3001/student/:studentId 
 
 B) After Render Deployment
 1.To create Mentor  (Post method)
