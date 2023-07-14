@@ -49,12 +49,6 @@ const Mentor = mongoose.model('Mentor', mentorSchema);
 //Create a student model
 const Student = mongoose.model('Student', studentSchema);
 
-
-
-app.get('/',(request,response)=>{
-    response.send([{"Mentors":Mentor},{"Students":Student}])
-})
-
 //Create a mentor
 app.post('/mentor', (request, response) => {
 
