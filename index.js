@@ -53,11 +53,13 @@ const Student = mongoose.model('Student', studentSchema);
 app.get('/',(req,res)=>{
     Mentor.find({},{})
      .then(mentor=>{
-         res.status(200).json({"Mentor":Mentor})
+         res.status(200).json({"Mentor":mentor})
+         console.log(mentor);
      })
     Student.find({},{})
      .then(student=>{
-         res.status(200).json({"Student":Student})
+         res.status(200).json({"Student":student})
+         console.log(student)
      })
 })
 
